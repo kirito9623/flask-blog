@@ -30,3 +30,66 @@ form {
 form label, form input, form textarea, form button {
     margin-bottom: 10px;
 }
+
+
+/* Contenedor principal de las publicaciones */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Diseño de las tarjetas */
+.post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Títulos en las tarjetas */
+.post-card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Texto de las publicaciones */
+.post-card p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Fecha de publicación */
+.post-card small {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* Botones en las tarjetas */
+.post-card a, .post-card button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post-card a:hover, .post-card button:hover {
+    background-color: #0056b3;
+}
