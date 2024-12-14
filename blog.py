@@ -35,6 +35,15 @@ def index():
     posts = Post.query.all()  # Obtiene todas las publicaciones
     return render_template('index.html', posts=posts)
 
+@app.route('/about')
+def about():
+    return render_template(about.html)
+
+@app.route('/contact')
+def contact():
+    return render_template(contact.html)
+
+
 @app.route('/post/<int:post_id>')
 def post(post_id):
     post = Post.query.get_or_404(post_id)  # Obtiene la publicación o devuelve un error 404
